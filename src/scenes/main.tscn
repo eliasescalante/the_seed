@@ -1,0 +1,105 @@
+[gd_scene load_steps=8 format=3 uid="uid://b87w0iko5mguv"]
+
+[ext_resource type="Script" uid="uid://lfcpa6pb0ipx" path="res://src/scripts/main.gd" id="1_5dlwx"]
+[ext_resource type="Texture2D" uid="uid://cskixovt11rq7" path="res://src/assets/img/patanlla inicio.png" id="1_32aa5"]
+[ext_resource type="Texture2D" uid="uid://m3th4wvul4ho" path="res://src/assets/img/semillita logo.png" id="2_5dlwx"]
+[ext_resource type="PackedScene" uid="uid://dh6ai5b4yitfk" path="res://src/scenes/background/cloud.tscn" id="4_5dlwx"]
+
+[sub_resource type="Animation" id="Animation_32aa5"]
+resource_name = "curtains"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Curtains:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5dlwx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Curtains:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o81g6"]
+_data = {
+&"RESET": SubResource("Animation_5dlwx"),
+&"curtains": SubResource("Animation_32aa5")
+}
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_5dlwx")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(579, 326)
+scale = Vector2(0.56543, 0.603704)
+texture = ExtResource("1_32aa5")
+
+[node name="Ui" type="Node2D" parent="."]
+
+[node name="Cloud" parent="Ui" instance=ExtResource("4_5dlwx")]
+position = Vector2(121, 9)
+velocidad = 10.0
+distancia_limite = 2000.0
+
+[node name="Cloud2" parent="Ui" instance=ExtResource("4_5dlwx")]
+position = Vector2(392, 88)
+distancia_limite = 2000.0
+
+[node name="Cloud3" parent="Ui" instance=ExtResource("4_5dlwx")]
+position = Vector2(-136, 76)
+velocidad = 5.0
+distancia_limite = 2000.0
+
+[node name="Cloud4" parent="Ui" instance=ExtResource("4_5dlwx")]
+position = Vector2(-300, 6)
+velocidad = 5.0
+distancia_limite = 2000.0
+
+[node name="Logo" type="Sprite2D" parent="Ui"]
+position = Vector2(573, 248)
+scale = Vector2(0.594852, 0.553066)
+texture = ExtResource("2_5dlwx")
+
+[node name="play" type="Button" parent="Ui"]
+offset_left = 325.0
+offset_top = 494.0
+offset_right = 494.0
+offset_bottom = 543.0
+
+[node name="credits" type="Button" parent="Ui"]
+offset_left = 620.0
+offset_top = 488.0
+offset_right = 780.0
+offset_bottom = 539.0
+
+[node name="quit" type="Button" parent="Ui"]
+offset_left = 998.0
+offset_top = 582.0
+offset_right = 1130.0
+offset_bottom = 629.0
+
+[node name="Curtains" type="ColorRect" parent="."]
+offset_right = 1161.0
+offset_bottom = 657.0
+mouse_filter = 2
+
+[node name="Curtains_animation" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_o81g6")
+}

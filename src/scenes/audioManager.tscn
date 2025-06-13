@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://cufqnknpr8224"]
+
+[ext_resource type="AudioStream" uid="uid://d1g31uexuldih" path="res://src/assets/audio/intro_prestada.mp3" id="1_ihgs3"]
+[ext_resource type="AudioStream" uid="uid://m5r1tysa0gc8" path="res://src/assets/audio/ending.mp3" id="2_jo1wo"]
+[ext_resource type="AudioStream" uid="uid://qs7tbtijjnba" path="res://src/assets/audio/vientito.mp3" id="3_8mnap"]
+[ext_resource type="AudioStream" uid="uid://dkt8cmh350ry4" path="res://src/assets/audio/pasitos.mp3" id="4_vk6mp"]
+
+[node name="AudioManager" type="Node2D"]
+
+[node name="Main" type="Node2D" parent="."]
+
+[node name="main_intro" type="AudioStreamPlayer" parent="Main"]
+stream = ExtResource("1_ihgs3")
+
+[node name="ending" type="AudioStreamPlayer" parent="Main"]
+stream = ExtResource("2_jo1wo")
+
+[node name="FX" type="Node2D" parent="."]
+
+[node name="wind" type="AudioStreamPlayer" parent="FX"]
+stream = ExtResource("3_8mnap")
+
+[node name="step" type="AudioStreamPlayer" parent="FX"]
+stream = ExtResource("4_vk6mp")

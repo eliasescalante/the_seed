@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cb78dlbgdlyf0"]
+
+[node name="Win-lose" type="Node2D"]

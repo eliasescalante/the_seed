@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh6ai5b4yitfk"]
+
+[ext_resource type="Script" uid="uid://bhybpwl73pm7p" path="res://src/scripts/background_scripts/cloud.gd" id="1_hanbp"]
+[ext_resource type="Texture2D" uid="uid://3a3fbepfmn4d" path="res://src/assets/img/cloud.PNG" id="2_s218p"]
+
+[node name="Cloud" type="Node2D"]
+script = ExtResource("1_hanbp")
+
+[node name="cloud" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.380392)
+position = Vector2(-2, 2)
+scale = Vector2(0.05145, 0.0396786)
+texture = ExtResource("2_s218p")

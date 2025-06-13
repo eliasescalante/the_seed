@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://bf8nrniel3mnr"]
+
+[ext_resource type="Script" uid="uid://dg16a8coy46k3" path="res://src/scripts/background_scripts/seed_intro_idle.gd" id="1_u6nd8"]
+[ext_resource type="Texture2D" uid="uid://c5eksw4mjl58m" path="res://src/assets/img/walk.png" id="2_rlfry"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_plsfn"]
+atlas = ExtResource("2_rlfry")
+region = Rect2(0, 0, 338, 372)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smvij"]
+atlas = ExtResource("2_rlfry")
+region = Rect2(338, 0, 338, 372)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fvc3o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_plsfn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smvij")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[node name="SeedIntroIdle" type="Node2D"]
+script = ExtResource("1_u6nd8")
+
+[node name="seed" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -1)
+scale = Vector2(0.197485, 0.178091)
+sprite_frames = SubResource("SpriteFrames_fvc3o")
+animation = &"idle"
+frame_progress = 0.33086
