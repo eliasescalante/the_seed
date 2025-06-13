@@ -1,13 +1,13 @@
 # Equipo Maremoto
 
-Repositorio del proyecto **Maremoto**, un [The seed version 1.1].  
+[The seed version 1.1].
 
 ---
 
 ## Descripción
 
-**The seed ** es un [juego] desarrollado con [Godot 4.4.1].  
-El objetivo principal del proyecto es [mejora en la escalabilidad del proyecto y mejoras visuales].
+**The seed ** es un juego desarrollado con Godot 4.4.1.  
+El objetivo principal del proyecto es mejorar la escalabilidad del proyecto e implementar mejoras visuales.
 
 ---
 
