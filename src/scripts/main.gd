@@ -16,6 +16,8 @@ func _process(delta: float) -> void:
 func _on_play_pressed() -> void:
 	$Curtains_animation.play("curtains_ending")
 	AudioManager.get_node("Main/main_intro").stop()
+	await get_tree().create_timer(5.0).timeout
+	get_tree().change_scene_to_file("res://src/scenes/lore.tscn")
 	pass # Replace with function body.
 
 
