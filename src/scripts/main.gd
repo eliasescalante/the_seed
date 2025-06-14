@@ -14,6 +14,8 @@ func _process(delta: float) -> void:
 
 
 func _on_play_pressed() -> void:
+	$Curtains_animation.play("curtains_ending")
+	AudioManager.get_node("Main/main_intro").stop()
 	pass # Replace with function body.
 
 
