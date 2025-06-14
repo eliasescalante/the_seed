@@ -2,6 +2,11 @@
 
 [The seed version 1.1].
 
+### GAME DESIGN : Fernanda Di Zoccolo ( https://ferchu-ayanami.itch.io/ )
+### ART : Lucia Ruggieri ( https://lusalas.artstation.com/ )
+### DEVELOPER : Elias Escalante ( https://www.linkedin.com/in/elias-escalante/ )
+### QA TESTER : Mariano Di Zoccolo ( ## )
+
 ---
 
 ## Descripción
