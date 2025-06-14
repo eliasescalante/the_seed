@@ -6,7 +6,7 @@
 ### ART : Lucia Ruggieri ( https://maluruggieri.myportfolio.com/ )
 ### DEVELOPER : Elias Escalante ( https://www.linkedin.com/in/elias-escalante/ )
 ### QA TESTER : Mariano Di Zoccolo ( ## )
-### AUDIO: Adrian ( https://driann.itch.io/ )
+### AUDIO: Adrián Betancourt  ( https://driannn.github.io/)
 
 ---
 
