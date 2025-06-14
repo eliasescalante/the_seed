@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b87w0iko5mguv"]
+[gd_scene load_steps=21 format=3 uid="uid://b87w0iko5mguv"]
 
 [ext_resource type="Script" uid="uid://lfcpa6pb0ipx" path="res://src/scripts/main.gd" id="1_5dlwx"]
 [ext_resource type="Texture2D" uid="uid://m3th4wvul4ho" path="res://src/assets/img/semillita logo.png" id="2_5dlwx"]
@@ -8,10 +8,25 @@
 [ext_resource type="Texture2D" uid="uid://c33ydy7cxcmmy" path="res://src/assets/img/galery buttom.png" id="6_5lsyw"]
 [ext_resource type="FontFile" uid="uid://dejnru75y2jx6" path="res://src/assets/fonts/flower/IndieFlower-Regular.ttf" id="6_kokaf"]
 [ext_resource type="Texture2D" uid="uid://cvt32jll5lbeq" path="res://src/assets/img/start buttom.png" id="7_kokaf"]
+[ext_resource type="Texture2D" uid="uid://bvke6aqd0yyrt" path="res://src/assets/img/credits buttom.png" id="7_lp058"]
 [ext_resource type="Texture2D" uid="uid://d2j5axomep20b" path="res://src/assets/img/cargarpartida buttom.png" id="8_lp058"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4rjby"]
+texture = ExtResource("7_lp058")
+expand_margin_left = 25.0
+expand_margin_top = 40.0
+expand_margin_right = 25.0
+expand_margin_bottom = 40.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_24j03"]
 texture = ExtResource("6_5lsyw")
+expand_margin_left = 25.0
+expand_margin_top = 40.0
+expand_margin_right = 25.0
+expand_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ccybt"]
+texture = ExtResource("7_lp058")
 expand_margin_left = 25.0
 expand_margin_top = 40.0
 expand_margin_right = 25.0
@@ -24,12 +39,19 @@ expand_margin_top = 40.0
 expand_margin_right = 25.0
 expand_margin_bottom = 40.0
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_50ugh"]
+texture = ExtResource("7_lp058")
+expand_margin_left = 25.0
+expand_margin_top = 40.0
+expand_margin_right = 25.0
+expand_margin_bottom = 40.0
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kbdt0"]
 texture = ExtResource("8_lp058")
 expand_margin_left = 25.0
-expand_margin_top = 30.0
+expand_margin_top = 40.0
 expand_margin_right = 25.0
-expand_margin_bottom = 30.0
+expand_margin_bottom = 40.0
 
 [sub_resource type="Animation" id="Animation_5dlwx"]
 length = 0.001
@@ -184,6 +206,7 @@ offset_right = 650.0
 offset_bottom = 495.0
 theme_override_fonts/font = ExtResource("6_kokaf")
 theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxTexture_4rjby")
 theme_override_styles/normal = SubResource("StyleBoxTexture_24j03")
 text = "Jugar"
 
@@ -194,6 +217,7 @@ offset_right = 646.0
 offset_bottom = 559.0
 theme_override_fonts/font = ExtResource("6_kokaf")
 theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxTexture_ccybt")
 theme_override_styles/normal = SubResource("StyleBoxTexture_p1ia5")
 text = "Creditos"
 
@@ -204,6 +228,7 @@ offset_right = 632.0
 offset_bottom = 619.0
 theme_override_fonts/font = ExtResource("6_kokaf")
 theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxTexture_50ugh")
 theme_override_styles/normal = SubResource("StyleBoxTexture_kbdt0")
 text = "Salir"
 
